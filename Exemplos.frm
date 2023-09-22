@@ -1,0 +1,26 @@
+DROP DATABASE Consultorio;
+
+CREATE DATABASE Consultorio;
+
+USE Consultorio;
+
+CREATE TABLE Cliente
+(
+ID_CLIENTE INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+`STATUS` VARCHAR(40) NULL,
+CPF CHAR(11) UNIQUE,
+NOME VARCHAR(100) NULL,
+SEXO CHAR(1) NULL,
+DATA_NASCIMENTO DATETIME NULL
+);
+
+INSERT INTO Cliente (Nome, `status`, CPF, Sexo, Data_Nascimento)
+VALUES ('Daniel', 'VIVO', '11111111111', 'M', '2002-06-21' ); 
+
+INSERT INTO Cliente (Nome, `status`, CPF, Sexo)
+VALUES ('Igor', 'VIVO', '11111111112', 'M'); 
+
+INSERT INTO Cliente (Nome, `status`, CPF, Sexo)
+VALUES ('Abner', 'MORTO', '11111111122', 'M'); 
+
+SELECT * FROM Cliente ORDER BY ID_CLIENTE;
