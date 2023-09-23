@@ -16,3 +16,10 @@ https://github.com/fbenghi/BancoDeDados2023-2
 ## **Datas Importantes:**
 
 	 17/set - Avaliação A2 - Parcial 1
+
+
+EXTRA:
+
+
+Conversor de arquivo .xlsx(excel) para SQL
+https://sqlizer.io/ 
